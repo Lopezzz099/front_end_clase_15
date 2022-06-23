@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="fondoAguoso">
+            <p>20% de descuento en todos los productos!</p>
+        </div>
+        <div class="fondoAzul">
+            <img src="img/Logo.png" alt="Logo">
+            <p>Nombre Tienda</p>
+        </div>
+        <div class="fondoNegro">
+            <ul type="none">
+                <li>Contacto</li>
+                <li>Registrarme</li>
+                <li>Ingresar</li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div class="padre">
+            <h1>Añadí tu super!</h1>
+            <p class="pgrande">Agregá tu personaje favorito completando las opciones.</p>
+            <form action="#">
+                <div class="segundoPadre">
+                    <section class="hijo1">              
+                        <div class="hijito1">
+                            <p><label for="nom">*Nombre</label></p>
+                            <p><input type="text" name="nombre" id="nom"></p>
+                        </div>
+                        <div class="hijito2">
+                            <p><label for="fechaNacimiento">Fecha</label></p>
+                            <p><input type="date" name="fecha" id="fechaNacimiento"></p>
+                        </div>
+                        <div class="hijito3">
+                            <p><label for="message"></label></p>
+                            <p><textarea name="message" id="message" cols="30" rows="10" placeholder="Descripción"></textarea></p>
+                        </div>
+                    </section>
+                    <section class="hijo2">
+                        <div class="hijito4">
+                            <p><label for="tipoEspecie">*Especie</label></p>
+                            <p>
+                                <input type="list" list="listaEspecie" placeholder="Especie">
+                                <datalist id="listaEspecie">
+                                    <option value="Humano"></option>
+                                    <option value="Alienigena"></option>
+                                    <option value="Mutante"></option>
+                                </datalist>
+                            </p>
+                        </div>
+                        <div class="hijito5">
+                            <p><label for="fotoPersona">Agregar foto</label></p>
+                            <p><input type="file" name="foto" id="fotoPersona"></p>
+                        </div>
+                        <div class="hijito6">
+                            <p class="titulo">Poderes</p>
+                            <p>
+                                <label>
+                                    <input type="checkbox" name="poderes">
+                                        Volar
+                                </label>
+                            </p>
+                            <p>
+                                <label>
+                                    <input type="checkbox" name="poderes">
+                                        SuperInteligencia
+                                </label>
+                            </p>
+                            <p>
+                                <label>
+                                    <input type="checkbox" name="poderes">
+                                        Vista de rayo láser
+                                </label>
+                            </p>
+                            <p>
+                                <label>
+                                    <input type="checkbox" name="poderes">
+                                        Billetera gorda
+                                </label>
+                            </p>
+                            <hr>
+                            <p class="titulo">Tipo de personaje</p>
+                            <p>
+                                <label>
+                                    <input type="radio" name="poderes">
+                                        Héroe / Heroina
+                                </label>
+                            </p>
+                            <p>
+                                <label>
+                                    <input type="radio" name="poderes">
+                                        Villano / Villana
+                                </label>
+                            </p>
+                        </div>
+                    </section>
+                </div>
+                <button type="submit">Añadir</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>Todos los derechos reservados a FRONT END 1</p>
+    </footer>
+</body>
+</html>
